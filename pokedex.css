@@ -1,0 +1,321 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    height: fit-content;
+    background-color: whitesmoke;
+
+}
+
+.navibar {
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80px;
+    justify-content: space-evenly;
+    /* background-color: turquoise; */
+}
+
+.logo {
+
+    border-radius: 15px;
+    width: 10%;
+    height: 100%;
+    overflow: hidden;
+    background-color: blue;
+}
+
+.contact {
+    height: 100%;
+    width: 40%;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+
+    /* background-color: black; */
+}
+
+.contact a {
+    display: flex;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 15px 10px;
+    background-color: turquoise;
+
+}
+
+.icon {
+    font-size: larger;
+}
+
+.search {
+
+    width: 20%;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* background-color: green; */
+}
+
+.search input {
+    width: 80%;
+    height: 40px;
+    border: none;
+    /* background-color: white; */
+    border-radius: 10px;
+}
+
+.search:hover {
+    box-shadow: inset;
+    transition: 1s;
+}
+
+
+.pokedexlogo {
+    position: sticky;
+    top: 0;
+    padding: 0px 20px;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: turquoise;
+    align-items: center;
+    z-index: 2;
+}
+
+.dexlogo {
+    width: 20%;
+    height: 100%;
+}
+
+.dexlogo img {
+    height: 100%;
+    width: 100%;
+}
+
+/* Drop down Group */
+.dropdown {
+    width: 10%;
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    padding: 10px 15px;
+    border: none;
+}
+
+.dropdown-content {
+    left: 0;
+    width: fit-content;
+   background-color: whitesmoke;
+    display: none;
+    position: absolute;
+    z-index: 1;
+ 
+}
+.dropdown:hover .dropdown-content {
+    justify-content: left;
+    display: block;
+}
+
+.dropdown-content a {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+.dropdown-content a:hover {
+    background-color: skyblue;
+}
+
+/* Drop down Group */
+
+
+.main {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: gray; */
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.pokebox {
+    margin: 30px auto;
+    height: 450px;
+    width: 300px;
+    position: relative;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pokemon {
+    position: absolute;
+    top: 0;
+    width: 80%;
+    height: 50%;
+    z-index: 1;
+}
+
+.pokedetail {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    line-height: 3;
+    padding: 0px 15px;
+    text-align: left;
+    bottom: 0;
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+}
+
+.pokedetail h3 {
+    color: white;
+}
+
+.pokedetail h4 {
+    color: white;
+}
+
+
+/* view port controller */
+@media (max-width: 1280px) {
+
+    .logo {
+        display: none;
+    }
+
+    .contact {
+        width: 50%;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .pokebox {
+
+        height: 400px;
+        width: 300px;
+    }
+
+    .pokemon {
+        height: 50%;
+    }
+
+    .pokedetail {
+        height: 70%;
+    }
+}
+
+@media (max-width: 430px) {
+
+    .navibar {
+        justify-content: center;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .contact {
+        width: 60%;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .pokebox {
+
+        height: 300px;
+        width: 150px;
+    }
+
+    .pokemon {
+        height: 40%;
+    }
+
+    .pokedetail {
+        height: 60%;
+        justify-content: flex-end;
+    }
+}
+
+/* view port controller */
+
+
+/* global  style for pokemons */
+.wh100 {
+    height: 100%;
+    width: 100%;
+}
+
+.electric {
+    background-color: rgb(241, 196, 59);
+}
+
+.fire {
+    background-color: rgb(228, 17, 80);
+}
+
+.water {
+    background-color: rgb(11, 171, 234);
+}
+
+.grass {
+    background-color: yellowgreen;
+}
+.psychic{
+    background-color: pink;
+}
+/* pokemon type description color */
+.electrict {
+    background-color: yellow;
+}
+
+.firet {
+    background-color: red
+}
+
+.watert {
+    background-color: rgb(5, 159, 235);
+}
+
+.grasst {
+    background-color: green;
+}
+.psychict{
+    background-color: palevioletred;
+}
+.type {
+    width: fit-content;
+    padding: 0px 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
